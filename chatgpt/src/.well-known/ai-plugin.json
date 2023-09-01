@@ -1,0 +1,17 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Healthylinkx - Search for Doctors (No Auth)",
+    "name_for_model": "HealthyLinkx",
+    "description_for_human": "Search for doctors. You can search by name, genre, speciality and zipcode",
+    "description_for_model": "Plugin for searchinbg for doctors, you can search by name, genre, speciality and zipcode.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "http://localhost:3333/openapi.yaml"
+    },
+    "logo_url": "http://localhost:3333/logo.png",
+    "contact_email": "contact@ulargui.com",
+    "legal_info_url": "http://ulargui.com"
+}

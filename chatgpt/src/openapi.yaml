@@ -1,0 +1,77 @@
+openapi: 3.0.1
+
+info:
+    title: HealthyLinkx Plugin
+    description: Plugin for searchinbg for doctors, you can search by name, genre, speciality and zipcode
+    version: "v1"
+
+servers:
+    - url: http://localhost:3333
+
+paths:
+    /prod/providers:
+        get:
+            operationId: getDoctors
+            summary: Get a list of doctors that meets the criteria
+            parameters:
+                - in: query
+                  name: zipcode
+                  required: false
+                  description: The zipcode of the address of the doctor.
+                  schema:
+                      type : integer
+                      example: 98052  
+                 - in: query
+                  name: lastname1
+                  required: false
+                  description: The name of the doctor.
+                  schema:
+                      type : string
+                      example: anderson  
+                 - in: query
+                  name: specialty
+                  required: false
+                  description: The specialty of the doctor.
+                  schema:
+                      type : string
+                      example: Nurse  
+                 - in: query
+                  name: gender
+                  required: false
+                  description: The gender of the doctor.
+                  schema:
+                      type : string
+                      example: male
+            responses:
+                "200":
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/getDoctorsResponse"
+
+components:
+    schemas:
+        getDoctorsResponse:
+            type: object
+            properties:
+                Providers:
+                    type: array
+                    description: The list of doctors.
+                    items:
+                        type: object
+                        description: Name, address, city, state, zipcode  and specialization of a doctor.
+                        properties:
+                            Provider_Full_Name: 
+                                type: string
+                            Provider_Full_Street:
+                                type: string
+                            Provider_Full_City: 
+                                type: string
+                            Specialization: 
+                                type: string
+                        example: 
+	                          Provider_Full_Name: ANDERSON, VIRGINIA  MHC
+	                          Provider_Full_Street: 16700 NE 79TH ST SUITE 103
+	                          Provider_Full_City: REDMOND, WA 980524465
+                              Specialization: Nurse
