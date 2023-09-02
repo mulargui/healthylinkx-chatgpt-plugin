@@ -25,7 +25,7 @@ Directories and files \
 healthylinkx-cli.sh - this is the command line interface \
 docker-healthylinkx-cli.sh - likewise but using docker \
 /infra/src - healthylinkx-cli app source code to install, uninstall and update the whole app \
-/infra/src/envparams.ts - All the parameters of the app, like datastore password... Fill in your data and save it before proceeding if you want to change the default values. \
+/infra/src/envparams.ts - All the parameters of the app, like datastore, password... Fill in your data and save it before proceeding if you want to change the default values. \
 /docker - dockerfile of the container
 
 The API is implemented as a lambda written in nodejs. \
@@ -36,8 +36,8 @@ The datastore is a RDS MySql instance and healthylinkx-cli creates the instance 
 /datastore/data - dump of the healthylinkx database (schema and data)
 
 The ux is a chatgpt plugin. \
-/chatgpt/src contains the different files needed to create a chatgpt plugin. Read the openai documentation for more details. \
-/chatgpt/src/main.py implements a local proxy to test the plugin. You need to edit and update the API url. \
-/chatgpt/test - shellscript to test the api using the local proxy
+/chatgpt/src contains the different files needed to register a chatgpt plugin. Read the openai documentation for more details. \
+/chatgpt/test - test the api using a local proxy \
+/chatgpt/test/main.py implements a local proxy to test the plugin. You need to edit and update the API url. 
 
 Have fun using this repo!
