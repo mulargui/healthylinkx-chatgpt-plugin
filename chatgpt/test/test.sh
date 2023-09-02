@@ -35,6 +35,6 @@ test "gender=m"
 URL=http://127.0.0.1:3333
 
 curl -L -H 'Content-Type: text/yaml' "$URL/openapi.yaml"
-curl -L -H 'Content-Type: application/json' "$URL/openapi.json"
+#curl -L -H 'Content-Type: application/json' "$URL/openapi.json"
 curl -L -H 'Content-Type: application/json' "$URL/.well-known/ai-plugin.json"
 curl -i -L -H 'Content-Type: image/png' "$URL/logo.png"
