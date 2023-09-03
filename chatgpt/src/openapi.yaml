@@ -60,7 +60,7 @@ components:
                     description: The list of doctors.
                     items:
                         type: object
-                        description: Name, address, city, state, zipcode  and specialization of a doctor.
+                        description: Name, address, city, state, zipcode and specialization of a doctor.
                         properties:
                             Provider_Full_Name: 
                                 type: string
