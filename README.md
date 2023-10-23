@@ -1,11 +1,16 @@
 # healthylinkx-chatgpt-plugin
+
+DISCLAIMER: I'VE BEEN WAITING ~8 WEEKS TO GET ACCESS TO CHATGPT PLUGIN DEVELOPMENT PROGRAM BUT STILL IN THE WAITLIST. I'LL UPDATE THIS README AS SOON AS I'M ACCEPTED AND I'LL SHARE RESULTS.
+
 Healthylinkx helps you find doctors with the help of your social network. Think of Healthylinkx as a combination of Yelp, Linkedin and Facebook.
 
 This is an early prototype that combines open data of doctors and specialists from the US Department of Health. It allows you to search for doctors based on location, specialization, genre or name. You can choose up to three doctors in the result list and Healthylinkx (theoretically) will book appointments for you.
 
 Healthylinx is a classic three tiers app: front-end (ux), service API and data store. This architecture makes it very adequate to test different technologies and I use it for getting my hands dirty on new stuff. Enjoy!
 
-This repo implements Healthylinkx using a chatgpt plugin as the front end. For each tier of the app, we use different AWS resources: RDS for the datastore, Lambda for the API and ChatGPT for the front-end.
+This repo implements Healthylinkx using a chatgpt plugin as the front end. The idea is that you can have a conversation style using chatGPT and the LLM will call Healthylinkx API to obtain doctor's results...
+
+For each tier of the app, we use different AWS resources: RDS for the datastore, Lambda for the API and ChatGPT for the front-end.
 
 To know more about the datastore this repo has more details https://github.com/mulargui/healthylinkx-mysql.git \
 Likewise about the API using Lambda https://github.com/mulargui/healthylinkx-serverless.git
