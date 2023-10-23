@@ -8,7 +8,7 @@ This is an early prototype that combines open data of doctors and specialists fr
 
 Healthylinx is a classic three tiers app: front-end (ux), service API and data store. This architecture makes it very adequate to test different technologies and I use it for getting my hands dirty on new stuff. Enjoy!
 
-This repo implements Healthylinkx using a chatgpt plugin as the front end. The idea is that you can have a conversation style using chatGPT and the LLM will call Healthylinkx API to obtain doctor's results...
+This repo implements Healthylinkx using a chatgpt plugin as the front end. The idea is that you can have a conversation style using chatGPT and the LLM will call Healthylinkx API to obtain doctor's results... ChatGPT will also format the output and keep/end the conversation.
 
 For each tier of the app, we use different AWS resources: RDS for the datastore, Lambda for the API and ChatGPT for the front-end.
 
