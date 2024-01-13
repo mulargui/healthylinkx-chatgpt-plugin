@@ -1,6 +1,6 @@
 # healthylinkx-chatgpt-plugin
 
-DISCLAIMER: I'VE BEEN WAITING ~8 WEEKS TO GET ACCESS TO CHATGPT PLUGIN DEVELOPMENT PROGRAM BUT STILL IN THE WAITLIST. I'LL UPDATE THIS README AS SOON AS I'M ACCEPTED AND I'LL SHARE RESULTS.
+DISCLAIMER: I'VE BEEN WAITING ~8 WEEKS TO GET ACCESS TO CHATGPT PLUGIN DEVELOPMENT PROGRAM BUT STILL IN THE WAITLIST. I'LL UPDATE THIS README AS SOON AS I'M ACCEPTED AND I'LL SHARE RESULTS.\
 UPDATE: During OpenAI Dev Day (11/6/23) they announced they are stopping supporting plugins and a new GPT model and store.
 
 Healthylinkx helps you find doctors with the help of your social network. Think of Healthylinkx as a combination of Yelp, Linkedin and Facebook.
